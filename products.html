@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compras</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="container gutter">
+    <nav class="navbar">
+      <ul class="navbar__lists">
+        <li><a class="navbar__link navbar__link--main" href="/">MyStore</a></li>
+        <li><a class="navbar__link navbar__link--active" href="/products.html">Productos</a></li>
+        <li><a class="navbar__link" href="/users.html">Usuarios</a></li>
+      </ul>
+
+      <a class="navbar__car" href="#">
+        Carrito
+        <span class="navbar__items">0</span>
+      </a>
+    </nav>
+
+    <section id="products" class="products"></section>
+  </div>
+
+  <div class="overlay">
+    <div class="modal">
+      <div class="card"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

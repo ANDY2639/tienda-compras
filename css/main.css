@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body { font-family: 'JetBrains Mono'; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul, ol { list-style: none; }
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.container-fluid { width: 100%; }
+
+.gutter { padding: 0 15px; }
+
+.hidden { display: none; }
+
+/* Component Navbar */
+
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+
+.navbar__lists {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar__link {
+  font-size: 14px;
+  color: rgb(158, 158, 158);
+}
+
+.navbar__link--main {
+  color: rgb(210, 249, 11);
+}
+
+.navbar__link--active {
+  color: rgb(255, 255, 255);
+}
+
+.navbar__car {
+  color: rgb(255, 255, 255);
+  background-color: blue;
+  padding: 8px 6px;
+  margin: 8px 0;
+  border-radius: 5px;
+  font-size: small;
+}
+
+.navbar__items {
+  background-color: white;
+  padding: 1px 4px;
+  color: red;
+  font-weight: 900;
+}
+
+/* Component Products */
+
+.products {
+  font-size: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+  gap: 10px;
+  width: 300px;
+}
+
+.product__img {
+  height: 200px;
+  object-fit: contain;
+}
+
+.product__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__name {}
+
+.product__price {}
+
+.product__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.product__btn {
+  all: unset;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-size: small;
+  cursor: pointer;
+  color: white;
+}
+
+.product__btn--add {
+  background-color: green;
+}
+
+.product__btn--detail {
+  background-color: blue;
+}
+
+/* .modal {} */
+.overlay {
+  display: none; /* Inicialmente oculto */
+  position: fixed; /* Fijar la capa en la ventana del navegador */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.card {}
+
+/* Component Users */
+
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+table {
+  width: 100%;
+  margin-top: 50px;
+}
+
+thead {
+  background: #000;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 15px;
+}
+
+tr:nth-child(even) {
+  background-color: #b8b8b8;
+}
+
+/* Loader Spinner */
+.loader {
+  width: 100px;
+  height: 100px;
+  border: 10px solid #FFF;
+  border-radius: 50%;
+  position: absolute;
+  transform: rotate(45deg);
+  box-sizing: border-box;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50px, -50%);
+}
+.loader::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  inset:-10px;
+  border-radius: 50%;
+  border:10px solid #FF3D00;
+  animation: prixClipFix 2s infinite linear;
+}
+
+@keyframes prixClipFix {
+    0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+    25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+    50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+    75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+    100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+}
