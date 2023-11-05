@@ -222,3 +222,128 @@ tr:nth-child(even) {
     75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
     100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
 }
+
+/* lista de compras*/
+
+.container{
+
+}
+
+.container h1{
+  text-align:center;
+}
+
+.title{
+  text-align:center;
+  font-size: 19px;
+  padding-top: 10px;
+}
+
+
+
+.opcion-item h2{
+  text-align:center;
+  padding-top: 15px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.opcion-item{
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.items{
+  display: flex;
+  column-gap: 15px;
+  row-gap: 15px;
+  padding:10px;
+  flex-wrap: wrap;
+
+}
+
+.item{
+  border:1px solid;
+  padding-left: 15px;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+.item img{
+  width: 150px;
+  height: 250px;
+  size: 100%;
+  margin-left: 59px;
+
+}
+.precio-cantidad{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  padding-top: 17px;
+}
+
+.precio{
+  text-align: center;
+}
+
+.cantidad{
+  text-align: left;
+
+}
+
+.add-less-del{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.add-less-del a{
+  font-size: 15px;
+}
+.quitar{
+  text-align: center;
+  background-color:aquamarine;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.agregar{
+  background-color:aquamarine;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.eliminar{
+  text-align: center;
+  background-color:#e95325;
+  padding-left:15px;
+  padding-right: 15px;
+
+}
+
+.opciones-compra h2{
+  padding-top: 15px;
+  padding-left:20px;
+  text-align: center;
+}
+.opciones-compra a{
+  display: block;
+  text-align: center;
+}
+
+.vaciar{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.comprar{
+  padding-bottom: 50px;
+}
